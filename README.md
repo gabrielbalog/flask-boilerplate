@@ -73,9 +73,9 @@ coverage report
 
 ## Plans for the future
 
-I've plan to update this repo using the SQLAlchemy Extension, besides running raw SQL.
+---I've plan to update this repo using the SQLAlchemy Extension, besides running raw SQL.
 I also plan to convert the models into class Models, so that behavior like a Flask Application
-with ORM.
+with ORM.---
 
 Integration with Postgres it's in my plan, also.
 
