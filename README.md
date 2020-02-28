@@ -25,6 +25,9 @@ git clone https://github.com/gabrielbalog/flask-boilerplate
 python3 -m venv venv
 
 source venv/bin/activate
+
+# Install the packages
+pip install -r requirements.txt
 ```
 
 Next it's needed to declare some environment variables to run flask properly:
