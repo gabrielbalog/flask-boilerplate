@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=flask
+      - POSTGRES_PASSWORD=flask123
+      - POSTGRES_DB=flask
+volumes:
+  postgres_data:

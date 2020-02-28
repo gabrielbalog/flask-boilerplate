@@ -8,13 +8,9 @@ def create_app(test_config=None):
 
     app = Flask(__name__, instance_relative_config=True)
 
-    database_uri = "sqlite:///{}".format(
-        os.path.join(app.instance_path, "flaskr.sqlite")
-    )
-
     app.config.from_mapping(
         SECRET_KEY="dev",
-        SQLALCHEMY_DATABASE_URI=database_uri,
+        SQLALCHEMY_DATABASE_URI="postgresql://flask:flask123@localhost/flask",
         SQLALCHEMY_TRACK_MODIFICATIONS=False,
     )
 
